@@ -1,6 +1,5 @@
 package ru.rezzo.academy.scene3d
 
-import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.exp
 import kotlin.math.sin
@@ -56,7 +55,27 @@ class OrbitCamera(home: OrbitPose, private val interiorPose: FirstPersonPose) {
     val lookAt = FloatArray(3)
 
     val minDistance = 1.6f
-    val maxDistance = 14f
+    var maxDistance = 16f
+        private set
+
+    /** Дистанция, при которой машина целиком помещается по ширине экрана. */
+    private var fitDistance = home.distance
+    private var userZoomed = false
+
+    /**
+     * Вызывается при изменении размера экрана. В портретной ориентации горизонтальный
+     * угол обзора узкий, поэтому камеру нужно отодвинуть дальше.
+     */
+    fun onViewport(aspect: Float, fovVerticalDeg: Float) {
+        val halfH = kotlin.math.tan(Math.toRadians(fovVerticalDeg / 2.0)).toFloat() * aspect
+        val needed = if (halfH > 1e-4f) 2.45f / halfH else homePose.distance
+        fitDistance = maxOf(homePose.distance * 0.9f, needed).coerceAtMost(26f)
+        maxDistance = maxOf(16f, fitDistance * 1.5f)
+        if (!userZoomed && mode == Mode.ORBIT) {
+            distanceGoal = fitDistance
+            distance = fitDistance
+        }
+    }
 
     init {
         compute(eye, lookAt)
@@ -89,7 +108,8 @@ class OrbitCamera(home: OrbitPose, private val interiorPose: FirstPersonPose) {
         yawGoal = nearestAngle(yaw, y)
         pitchGoal = pt
         homePose.target.copyInto(targetGoal)
-        distanceGoal = homePose.distance
+        distanceGoal = fitDistance
+        userZoomed = false
     }
 
     /** Навести орбиту на точку (например, на выбранную деталь). */
@@ -100,6 +120,14 @@ class OrbitCamera(home: OrbitPose, private val interiorPose: FirstPersonPose) {
         }
         point.copyInto(targetGoal)
         distanceGoal = dist.coerceIn(minDistance, maxDistance)
+        userZoomed = true
+    }
+
+    /** Вернуть орбиту к общему виду машины (с учётом размера экрана). */
+    fun resetOrbit() {
+        homePose.target.copyInto(targetGoal)
+        distanceGoal = fitDistance
+        userZoomed = false
     }
 
     fun drag(dxPx: Float, dyPx: Float) {
@@ -115,6 +143,7 @@ class OrbitCamera(home: OrbitPose, private val interiorPose: FirstPersonPose) {
     fun zoom(factor: Float) {
         if (mode == Mode.ORBIT && factor > 0f) {
             distanceGoal = (distanceGoal / factor).coerceIn(minDistance, maxDistance)
+            userZoomed = true
         }
     }
 
@@ -185,6 +214,4 @@ class OrbitCamera(home: OrbitPose, private val interiorPose: FirstPersonPose) {
         return current + d
     }
 
-    @Suppress("unused")
-    private val tau = (2 * PI).toFloat()
 }

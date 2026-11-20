@@ -169,6 +169,14 @@ fun CarScreen(
                 ui.mode = m
                 controller?.setMode(m)
             }
+            modeHint(ui.mode)?.let { hint ->
+                Text(
+                    hint,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = RezzoColors.TextDim,
+                )
+            }
             if (loadResult?.ok == false) {
                 Box(Modifier.padding(horizontal = 12.dp, vertical = 6.dp)) {
                     InfoNote("3D-модель не загрузилась: ${loadResult?.message}. Откройте «Учебная модель» для подробностей.", RezzoColors.Danger)
@@ -210,6 +218,14 @@ fun CarScreen(
             }
         }
     }
+}
+
+private fun modeHint(mode: ViewMode): String? = when (mode) {
+    ViewMode.NORMAL -> null
+    ViewMode.TRANSPARENT -> "Кузов полупрозрачный — касанием выбираются агрегаты внутри."
+    ViewMode.SECTION -> "Упрощённый разрез: сняты правая половина кузова, крыша и капот."
+    ViewMode.DISASSEMBLY -> "Снимайте узлы по шагам: «Снять ▶» и «◀ Вернуть»."
+    ViewMode.UNDERSIDE -> "Вид снизу: днище, подвеска, выпуск, бак. Вращайте пальцем."
 }
 
 private fun Modifier.blockTouches(): Modifier = this.pointerInput(Unit) { detectTapGestures { } }
@@ -359,7 +375,7 @@ private fun PartCard(
                     val open = ui.movables[movableId] == true
                     Pill(if (open) "Закрыть" else "Открыть", selected = open, onClick = {
                         ui.movables[movableId] = !open
-                        controller?.setMovable(movableId, !open)
+                        controller.setMovable(movableId, !open)
                     })
                 }
                 Pill("Только эта деталь", selected = false, onClick = {

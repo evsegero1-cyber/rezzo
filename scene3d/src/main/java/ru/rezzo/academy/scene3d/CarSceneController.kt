@@ -230,6 +230,7 @@ class CarSceneController(
                 view.viewport = Viewport(0, 0, viewportW, viewportH)
                 camera.setProjection(FOV, viewportW.toDouble() / viewportH, NEAR, FAR, Camera.Fov.VERTICAL)
                 Matrix.perspectiveM(projM, 0, FOV.toFloat(), viewportW.toFloat() / viewportH, NEAR.toFloat(), FAR.toFloat())
+                orbit.onViewport(viewportW.toFloat() / viewportH, FOV.toFloat())
                 dirtyFrames = 4
             }
         }
@@ -719,7 +720,7 @@ class CarSceneController(
     fun showAll() {
         userHidden.clear()
         applyVisibility()
-        orbit.focus(config.home.target, config.home.distance)
+        orbit.resetOrbit()
     }
 
     val hasHiddenByUser: Boolean get() = userHidden.isNotEmpty()

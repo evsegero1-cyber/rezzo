@@ -22,7 +22,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -86,7 +86,7 @@ fun SystemsScreen(container: AppContainer, onOpenSystem: (String) -> Unit) {
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(system.title, style = MaterialTheme.typography.titleMedium, color = RezzoColors.Text, modifier = Modifier.weight(1f))
-                    Icon(Icons.Filled.KeyboardArrowRight, contentDescription = null, tint = RezzoColors.TextDim)
+                    Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null, tint = RezzoColors.TextDim)
                 }
                 Spacer(Modifier.height(4.dp))
                 Text(system.summary, style = MaterialTheme.typography.bodySmall, color = RezzoColors.TextDim, maxLines = 2, overflow = TextOverflow.Ellipsis)
