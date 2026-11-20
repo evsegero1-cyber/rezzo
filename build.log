@@ -1,0 +1,162 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :core:preBuild UP-TO-DATE
+> Task :core:preReleaseBuild UP-TO-DATE
+> Task :scene3d:preBuild UP-TO-DATE
+> Task :scene3d:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseResValues
+> Task :core:writeReleaseAarMetadata
+> Task :scene3d:writeReleaseAarMetadata
+> Task :core:generateReleaseResValues
+> Task :core:generateReleaseResources
+> Task :app:checkReleaseAarMetadata
+> Task :core:packageReleaseResources
+> Task :scene3d:generateReleaseResValues
+> Task :scene3d:generateReleaseResources
+> Task :scene3d:packageReleaseResources
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:mergeReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :core:extractDeepLinksRelease
+> Task :scene3d:extractDeepLinksRelease
+> Task :core:compileReleaseLibraryResources
+> Task :app:parseReleaseLocalResources
+> Task :scene3d:compileReleaseLibraryResources
+> Task :core:parseReleaseLocalResources
+> Task :core:processReleaseManifest
+> Task :scene3d:processReleaseManifest
+> Task :scene3d:parseReleaseLocalResources
+> Task :core:generateReleaseRFile
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:processReleaseManifestForPackage
+> Task :core:checkKotlinGradlePluginConfigurationErrors
+> Task :scene3d:generateReleaseRFile
+> Task :scene3d:checkKotlinGradlePluginConfigurationErrors
+> Task :core:javaPreCompileRelease
+> Task :app:processReleaseResources
+> Task :scene3d:javaPreCompileRelease
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :core:extractProguardFiles
+> Task :core:prepareLintJarForPublish
+> Task :scene3d:extractProguardFiles
+> Task :scene3d:prepareLintJarForPublish
+> Task :core:mergeReleaseJniLibFolders
+> Task :core:mergeReleaseNativeLibs NO-SOURCE
+> Task :core:stripReleaseDebugSymbols NO-SOURCE
+> Task :core:extractDeepLinksForAarRelease
+> Task :core:copyReleaseJniLibsProjectAndLocalJars
+> Task :core:mergeReleaseShaders
+> Task :core:compileReleaseShaders NO-SOURCE
+> Task :core:generateReleaseAssets UP-TO-DATE
+> Task :core:packageReleaseAssets
+> Task :core:prepareReleaseArtProfile
+> Task :scene3d:mergeReleaseJniLibFolders
+> Task :scene3d:mergeReleaseNativeLibs NO-SOURCE
+> Task :scene3d:stripReleaseDebugSymbols NO-SOURCE
+> Task :scene3d:copyReleaseJniLibsProjectAndLocalJars
+> Task :scene3d:extractDeepLinksForAarRelease
+> Task :scene3d:mergeReleaseShaders
+> Task :scene3d:compileReleaseShaders NO-SOURCE
+> Task :scene3d:generateReleaseAssets UP-TO-DATE
+> Task :scene3d:packageReleaseAssets
+> Task :scene3d:prepareReleaseArtProfile
+> Task :core:writeReleaseLintModelMetadata
+> Task :scene3d:writeReleaseLintModelMetadata
+> Task :app:mergeReleaseJniLibFolders
+> Task :core:copyReleaseJniLibsProjectOnly
+> Task :scene3d:copyReleaseJniLibsProjectOnly
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:desugarReleaseFileDependencies
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeReleaseNativeLibs
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libdatastore_shared_counter.so, libfilament-jni.so, libgltfio-jni.so.
+
+> Task :core:kspReleaseKotlin
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeExtDexRelease
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:optimizeReleaseResources
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :core:mapReleaseSourceSetPaths
+> Task :core:mergeReleaseResources
+> Task :scene3d:mapReleaseSourceSetPaths
+> Task :scene3d:mergeReleaseResources
+> Task :core:verifyReleaseResources
+> Task :scene3d:verifyReleaseResources
+> Task :core:compileReleaseKotlin
+> Task :scene3d:compileReleaseKotlin
+> Task :core:compileReleaseJavaWithJavac
+> Task :scene3d:compileReleaseJavaWithJavac NO-SOURCE
+> Task :core:bundleLibRuntimeToJarRelease
+> Task :core:bundleLibCompileToJarRelease
+> Task :scene3d:bundleLibCompileToJarRelease
+> Task :core:processReleaseJavaRes
+> Task :core:createFullJarRelease
+> Task :core:generateReleaseLintModel
+> Task :scene3d:bundleLibRuntimeToJarRelease
+> Task :scene3d:processReleaseJavaRes
+> Task :scene3d:createFullJarRelease
+> Task :scene3d:generateReleaseLintModel
+> Task :core:extractReleaseAnnotations
+> Task :core:mergeReleaseGeneratedProguardFiles
+> Task :core:mergeReleaseConsumerProguardFiles
+> Task :core:mergeReleaseJavaResource
+> Task :core:syncReleaseLibJars
+> Task :core:bundleReleaseLocalLintAar
+> Task :scene3d:extractReleaseAnnotations
+> Task :scene3d:mergeReleaseGeneratedProguardFiles
+> Task :scene3d:mergeReleaseConsumerProguardFiles
+> Task :scene3d:mergeReleaseJavaResource
+> Task :scene3d:syncReleaseLibJars
+> Task :scene3d:bundleReleaseLocalLintAar
+> Task :core:generateReleaseLintVitalModel
+> Task :scene3d:generateReleaseLintVitalModel
+> Task :core:bundleLibRuntimeToDirRelease
+> Task :scene3d:bundleLibRuntimeToDirRelease
+> Task :core:bundleReleaseAar
+> Task :core:assembleRelease
+> Task :scene3d:bundleReleaseAar
+> Task :scene3d:assembleRelease
+> Task :app:compileReleaseKotlin
+> Task :app:compileReleaseJavaWithJavac NO-SOURCE
+> Task :app:generateReleaseLintVitalReportModel
+> Task :core:lintVitalAnalyzeRelease
+> Task :app:dexBuilderRelease
+> Task :app:mergeReleaseGlobalSynthetics
+> Task :app:processReleaseJavaRes
+> Task :app:mergeReleaseJavaResource
+> Task :scene3d:lintVitalAnalyzeRelease
+> Task :app:mergeDexRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:assembleRelease
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/build-1795164983325.json
+
+BUILD SUCCESSFUL in 1m 12s
+131 actionable tasks: 131 executed
