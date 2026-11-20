@@ -1,0 +1,1711 @@
+{
+ "comment": "Конфигурация сцены. Узлы (node) — имена из GLB. Сгенерировано tools/gen_placeholder_car.py",
+ "model": "models/rezzo_placeholder.glb",
+ "placeholder": true,
+ "placeholderNote": "Учебная заглушка: габариты 4350×1755×1580 мм и база 2600 мм — по паспортным данным, форма кузова и размещение агрегатов — условные.",
+ "home": {
+  "target": [
+   0.0,
+   0.65,
+   0.0
+  ],
+  "yaw": 38,
+  "pitch": 16,
+  "distance": 7.2
+ },
+ "interior": {
+  "eye": [
+   -0.05,
+   1.2,
+   0.37
+  ],
+  "yaw": 0,
+  "pitch": -10
+ },
+ "parts": [
+  {
+   "node": "door_front_l",
+   "partId": "door_front",
+   "side": "левая"
+  },
+  {
+   "node": "door_rear_l",
+   "partId": "door_rear",
+   "side": "левая"
+  },
+  {
+   "node": "window_front_l",
+   "partId": "side_window",
+   "side": "передняя левая"
+  },
+  {
+   "node": "window_rear_l",
+   "partId": "side_window",
+   "side": "задняя левая"
+  },
+  {
+   "node": "headlight_l",
+   "partId": "headlight",
+   "side": "левая"
+  },
+  {
+   "node": "turn_front_l",
+   "partId": "turn_signal",
+   "side": "передний левый"
+  },
+  {
+   "node": "turn_rear_l",
+   "partId": "turn_signal",
+   "side": "задний левый"
+  },
+  {
+   "node": "taillight_l",
+   "partId": "taillight",
+   "side": "левый"
+  },
+  {
+   "node": "reverse_light_l",
+   "partId": "reverse_light",
+   "side": "левый"
+  },
+  {
+   "node": "strut_front_l",
+   "partId": "strut_front",
+   "side": "левая"
+  },
+  {
+   "node": "spring_front_l",
+   "partId": "coil_spring",
+   "side": "передняя левая"
+  },
+  {
+   "node": "lower_arm_front_l",
+   "partId": "lower_arm",
+   "side": "левый"
+  },
+  {
+   "node": "tie_rod_l",
+   "partId": "tie_rod",
+   "side": "левая"
+  },
+  {
+   "node": "driveshaft_l",
+   "partId": "driveshaft",
+   "side": "левая"
+  },
+  {
+   "node": "shock_rear_l",
+   "partId": "shock_rear",
+   "side": "левый"
+  },
+  {
+   "node": "spring_rear_l",
+   "partId": "coil_spring",
+   "side": "задняя левая"
+  },
+  {
+   "node": "links_rear_l",
+   "partId": "rear_suspension",
+   "side": "левая"
+  },
+  {
+   "node": "brake_disc_fl",
+   "partId": "brake_disc",
+   "side": "левый"
+  },
+  {
+   "node": "caliper_fl",
+   "partId": "brake_caliper",
+   "side": "левый"
+  },
+  {
+   "node": "brake_drum_rl",
+   "partId": "brake_drum",
+   "side": "левый"
+  },
+  {
+   "node": "wheel_fl",
+   "partId": "wheel",
+   "side": "переднее левое"
+  },
+  {
+   "node": "wheel_rl",
+   "partId": "wheel",
+   "side": "заднее левое"
+  },
+  {
+   "node": "seat_front_l",
+   "partId": "seats",
+   "side": "водителя"
+  },
+  {
+   "node": "door_front_r",
+   "partId": "door_front",
+   "side": "правая"
+  },
+  {
+   "node": "door_rear_r",
+   "partId": "door_rear",
+   "side": "правая"
+  },
+  {
+   "node": "window_front_r",
+   "partId": "side_window",
+   "side": "передняя правая"
+  },
+  {
+   "node": "window_rear_r",
+   "partId": "side_window",
+   "side": "задняя правая"
+  },
+  {
+   "node": "headlight_r",
+   "partId": "headlight",
+   "side": "правая"
+  },
+  {
+   "node": "turn_front_r",
+   "partId": "turn_signal",
+   "side": "передний правый"
+  },
+  {
+   "node": "turn_rear_r",
+   "partId": "turn_signal",
+   "side": "задний правый"
+  },
+  {
+   "node": "taillight_r",
+   "partId": "taillight",
+   "side": "правый"
+  },
+  {
+   "node": "reverse_light_r",
+   "partId": "reverse_light",
+   "side": "правый"
+  },
+  {
+   "node": "strut_front_r",
+   "partId": "strut_front",
+   "side": "правая"
+  },
+  {
+   "node": "spring_front_r",
+   "partId": "coil_spring",
+   "side": "передняя правая"
+  },
+  {
+   "node": "lower_arm_front_r",
+   "partId": "lower_arm",
+   "side": "правый"
+  },
+  {
+   "node": "tie_rod_r",
+   "partId": "tie_rod",
+   "side": "правая"
+  },
+  {
+   "node": "driveshaft_r",
+   "partId": "driveshaft",
+   "side": "правая"
+  },
+  {
+   "node": "shock_rear_r",
+   "partId": "shock_rear",
+   "side": "правый"
+  },
+  {
+   "node": "spring_rear_r",
+   "partId": "coil_spring",
+   "side": "задняя правая"
+  },
+  {
+   "node": "links_rear_r",
+   "partId": "rear_suspension",
+   "side": "правая"
+  },
+  {
+   "node": "brake_disc_fr",
+   "partId": "brake_disc",
+   "side": "правый"
+  },
+  {
+   "node": "caliper_fr",
+   "partId": "brake_caliper",
+   "side": "правый"
+  },
+  {
+   "node": "brake_drum_rr",
+   "partId": "brake_drum",
+   "side": "правый"
+  },
+  {
+   "node": "wheel_fr",
+   "partId": "wheel",
+   "side": "переднее правое"
+  },
+  {
+   "node": "wheel_rr",
+   "partId": "wheel",
+   "side": "заднее правое"
+  },
+  {
+   "node": "seat_front_r",
+   "partId": "seats",
+   "side": "пассажира"
+  },
+  {
+   "node": "fender_front_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_a_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_b_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_c_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "quarter_rear_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_d_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "roof_rail_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "sill_l",
+   "partId": "body_shell"
+  },
+  {
+   "node": "fender_front_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_a_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_b_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_c_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "quarter_rear_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "pillar_d_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "roof_rail_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "sill_r",
+   "partId": "body_shell"
+  },
+  {
+   "node": "roof",
+   "partId": "body_shell"
+  },
+  {
+   "node": "cowl",
+   "partId": "body_shell"
+  },
+  {
+   "node": "rear_panel",
+   "partId": "body_shell"
+  },
+  {
+   "node": "front_panel",
+   "partId": "body_shell"
+  },
+  {
+   "node": "bumper_front",
+   "partId": "bumper",
+   "side": "передний"
+  },
+  {
+   "node": "bumper_rear",
+   "partId": "bumper",
+   "side": "задний"
+  },
+  {
+   "node": "glass_quarter_front_l",
+   "partId": "fixed_glass"
+  },
+  {
+   "node": "glass_quarter_front_r",
+   "partId": "fixed_glass"
+  },
+  {
+   "node": "glass_quarter_rear_l",
+   "partId": "fixed_glass"
+  },
+  {
+   "node": "glass_quarter_rear_r",
+   "partId": "fixed_glass"
+  },
+  {
+   "node": "tailgate_glass",
+   "partId": "fixed_glass"
+  },
+  {
+   "node": "hood",
+   "partId": "hood"
+  },
+  {
+   "node": "tailgate",
+   "partId": "tailgate"
+  },
+  {
+   "node": "windshield",
+   "partId": "windshield"
+  },
+  {
+   "node": "engine_block",
+   "partId": "engine_block"
+  },
+  {
+   "node": "cylinder_head",
+   "partId": "cylinder_head"
+  },
+  {
+   "node": "valve_cover",
+   "partId": "valve_cover"
+  },
+  {
+   "node": "ignition_coil",
+   "partId": "ignition_coil"
+  },
+  {
+   "node": "spark_plugs",
+   "partId": "spark_plugs"
+  },
+  {
+   "node": "intake_manifold",
+   "partId": "intake_manifold"
+  },
+  {
+   "node": "throttle_body",
+   "partId": "throttle_body"
+  },
+  {
+   "node": "fuel_rail",
+   "partId": "fuel_rail"
+  },
+  {
+   "node": "injectors",
+   "partId": "injectors"
+  },
+  {
+   "node": "exhaust_manifold",
+   "partId": "exhaust_manifold"
+  },
+  {
+   "node": "alternator",
+   "partId": "alternator"
+  },
+  {
+   "node": "accessory_belt",
+   "partId": "accessory_belt"
+  },
+  {
+   "node": "water_pump",
+   "partId": "water_pump"
+  },
+  {
+   "node": "starter",
+   "partId": "starter"
+  },
+  {
+   "node": "gearbox",
+   "partId": "gearbox"
+  },
+  {
+   "node": "air_filter",
+   "partId": "air_filter"
+  },
+  {
+   "node": "battery",
+   "partId": "battery"
+  },
+  {
+   "node": "fuse_box",
+   "partId": "fuse_box"
+  },
+  {
+   "node": "brake_booster",
+   "partId": "brake_booster"
+  },
+  {
+   "node": "master_cylinder",
+   "partId": "master_cylinder"
+  },
+  {
+   "node": "radiator",
+   "partId": "radiator"
+  },
+  {
+   "node": "cooling_fan",
+   "partId": "cooling_fan"
+  },
+  {
+   "node": "coolant_reservoir",
+   "partId": "coolant_reservoir"
+  },
+  {
+   "node": "coolant_hoses",
+   "partId": "coolant_hoses"
+  },
+  {
+   "node": "thermostat",
+   "partId": "thermostat"
+  },
+  {
+   "node": "catalytic_converter",
+   "partId": "catalytic_converter"
+  },
+  {
+   "node": "exhaust_pipe",
+   "partId": "exhaust_pipe"
+  },
+  {
+   "node": "muffler",
+   "partId": "muffler"
+  },
+  {
+   "node": "fuel_tank",
+   "partId": "fuel_tank"
+  },
+  {
+   "node": "fuel_pump",
+   "partId": "fuel_pump"
+  },
+  {
+   "node": "fuel_line",
+   "partId": "fuel_line"
+  },
+  {
+   "node": "steering_rack",
+   "partId": "steering_rack"
+  },
+  {
+   "node": "dashboard",
+   "partId": "dashboard"
+  },
+  {
+   "node": "instrument_cluster",
+   "partId": "instrument_cluster"
+  },
+  {
+   "node": "steering_wheel",
+   "partId": "steering_wheel"
+  },
+  {
+   "node": "gear_lever",
+   "partId": "gear_lever"
+  },
+  {
+   "node": "pedals",
+   "partId": "pedals"
+  },
+  {
+   "node": "floor",
+   "partId": "body_shell",
+   "side": "пол"
+  },
+  {
+   "node": "firewall",
+   "partId": "body_shell",
+   "side": "моторный щит"
+  },
+  {
+   "node": "oil_pan",
+   "partId": "oil_system",
+   "side": "масляный картер"
+  },
+  {
+   "node": "timing_cover",
+   "partId": "timing_drive",
+   "side": "кожух ГРМ"
+  },
+  {
+   "node": "crank_pulley",
+   "partId": "crankshaft",
+   "side": "шкив коленвала"
+  },
+  {
+   "node": "clutch_housing",
+   "partId": "clutch",
+   "side": "картер сцепления"
+  },
+  {
+   "node": "air_duct",
+   "partId": "air_filter",
+   "side": "воздуховод"
+  },
+  {
+   "node": "exhaust_downpipe",
+   "partId": "exhaust_pipe",
+   "side": "приёмная труба"
+  },
+  {
+   "node": "tailpipe",
+   "partId": "exhaust_pipe",
+   "side": "выпускная труба"
+  },
+  {
+   "node": "stabilizer_front",
+   "partId": "stabilizer",
+   "side": "передний"
+  },
+  {
+   "node": "stabilizer_rear",
+   "partId": "stabilizer",
+   "side": "задний"
+  },
+  {
+   "node": "seat_rear",
+   "partId": "seats",
+   "side": "задний диван"
+  }
+ ],
+ "movables": [
+  {
+   "id": "door_front_l",
+   "node": "door_front_l",
+   "type": "rotate",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "angle": 65,
+   "group": "doors",
+   "duration": 0.9
+  },
+  {
+   "id": "window_front_l",
+   "node": "window_front_l",
+   "type": "translate",
+   "offset": [
+    0,
+    -0.4,
+    0
+   ],
+   "group": "windows",
+   "duration": 1.6
+  },
+  {
+   "id": "door_rear_l",
+   "node": "door_rear_l",
+   "type": "rotate",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "angle": 65,
+   "group": "doors",
+   "duration": 0.9
+  },
+  {
+   "id": "window_rear_l",
+   "node": "window_rear_l",
+   "type": "translate",
+   "offset": [
+    0,
+    -0.32,
+    0
+   ],
+   "group": "windows",
+   "duration": 1.6
+  },
+  {
+   "id": "door_front_r",
+   "node": "door_front_r",
+   "type": "rotate",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "angle": -65,
+   "group": "doors",
+   "duration": 0.9
+  },
+  {
+   "id": "window_front_r",
+   "node": "window_front_r",
+   "type": "translate",
+   "offset": [
+    0,
+    -0.4,
+    0
+   ],
+   "group": "windows",
+   "duration": 1.6
+  },
+  {
+   "id": "door_rear_r",
+   "node": "door_rear_r",
+   "type": "rotate",
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "angle": -65,
+   "group": "doors",
+   "duration": 0.9
+  },
+  {
+   "id": "window_rear_r",
+   "node": "window_rear_r",
+   "type": "translate",
+   "offset": [
+    0,
+    -0.32,
+    0
+   ],
+   "group": "windows",
+   "duration": 1.6
+  },
+  {
+   "id": "hood",
+   "node": "hood",
+   "type": "rotate",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "angle": 52,
+   "group": "hood",
+   "duration": 1.1
+  },
+  {
+   "id": "tailgate",
+   "node": "tailgate",
+   "type": "rotate",
+   "axis": [
+    0,
+    0,
+    1
+   ],
+   "angle": -82,
+   "group": "tailgate",
+   "duration": 1.3
+  }
+ ],
+ "lights": [
+  {
+   "id": "parking",
+   "nodes": [
+    "headlight_l",
+    "headlight_r",
+    "taillight_l",
+    "taillight_r"
+   ],
+   "color": [
+    1.0,
+    0.25,
+    0.18
+   ],
+   "intensity": 0.35,
+   "perNodeColor": {
+    "headlight_l": [
+     0.9,
+     0.9,
+     0.85
+    ],
+    "headlight_r": [
+     0.9,
+     0.9,
+     0.85
+    ]
+   }
+  },
+  {
+   "id": "headlights",
+   "nodes": [
+    "headlight_l",
+    "headlight_r",
+    "taillight_l",
+    "taillight_r"
+   ],
+   "color": [
+    1.0,
+    0.25,
+    0.18
+   ],
+   "intensity": 1.0,
+   "perNodeColor": {
+    "headlight_l": [
+     1.0,
+     0.96,
+     0.86
+    ],
+    "headlight_r": [
+     1.0,
+     0.96,
+     0.86
+    ],
+    "taillight_l": [
+     0.6,
+     0.06,
+     0.04
+    ],
+    "taillight_r": [
+     0.6,
+     0.06,
+     0.04
+    ]
+   }
+  },
+  {
+   "id": "turn_left",
+   "nodes": [
+    "turn_front_l",
+    "turn_rear_l"
+   ],
+   "color": [
+    1.0,
+    0.55,
+    0.05
+   ],
+   "intensity": 1.2,
+   "blink": true
+  },
+  {
+   "id": "turn_right",
+   "nodes": [
+    "turn_front_r",
+    "turn_rear_r"
+   ],
+   "color": [
+    1.0,
+    0.55,
+    0.05
+   ],
+   "intensity": 1.2,
+   "blink": true
+  },
+  {
+   "id": "brake",
+   "nodes": [
+    "taillight_l",
+    "taillight_r"
+   ],
+   "color": [
+    1.0,
+    0.04,
+    0.03
+   ],
+   "intensity": 1.4
+  },
+  {
+   "id": "reverse",
+   "nodes": [
+    "reverse_light_l",
+    "reverse_light_r"
+   ],
+   "color": [
+    1.0,
+    1.0,
+    0.95
+   ],
+   "intensity": 1.0
+  }
+ ],
+ "groups": {
+  "body": [
+   "fender_front_l",
+   "pillar_a_l",
+   "glass_quarter_front_l",
+   "pillar_b_l",
+   "pillar_c_l",
+   "quarter_rear_l",
+   "glass_quarter_rear_l",
+   "pillar_d_l",
+   "roof_rail_l",
+   "sill_l",
+   "fender_front_r",
+   "pillar_a_r",
+   "glass_quarter_front_r",
+   "pillar_b_r",
+   "pillar_c_r",
+   "quarter_rear_r",
+   "glass_quarter_rear_r",
+   "pillar_d_r",
+   "roof_rail_r",
+   "sill_r",
+   "roof",
+   "cowl",
+   "bumper_front",
+   "bumper_rear",
+   "rear_panel",
+   "front_panel",
+   "door_front_l_panel",
+   "door_rear_l_panel",
+   "door_front_r_panel",
+   "door_rear_r_panel",
+   "door_front_l_frame",
+   "door_rear_l_frame",
+   "door_front_r_frame",
+   "door_rear_r_frame",
+   "hood_panel",
+   "tailgate_panel",
+   "tailgate_frame",
+   "door_front_l_handle",
+   "door_rear_l_handle",
+   "door_front_r_handle",
+   "door_rear_r_handle"
+  ],
+  "glass": [
+   "windshield",
+   "glass_quarter_front_l",
+   "glass_quarter_front_r",
+   "glass_quarter_rear_l",
+   "glass_quarter_rear_r",
+   "tailgate_glass",
+   "window_front_l",
+   "window_rear_l",
+   "window_front_r",
+   "window_rear_r"
+  ],
+  "section_hidden": [
+   "fender_front_r",
+   "pillar_a_r",
+   "glass_quarter_front_r",
+   "pillar_b_r",
+   "pillar_c_r",
+   "quarter_rear_r",
+   "glass_quarter_rear_r",
+   "pillar_d_r",
+   "roof_rail_r",
+   "sill_r",
+   "door_front_r_panel",
+   "door_rear_r_panel",
+   "door_front_r_frame",
+   "door_rear_r_frame",
+   "door_front_r_handle",
+   "door_rear_r_handle",
+   "roof",
+   "hood",
+   "windshield",
+   "glass_quarter_front_r",
+   "glass_quarter_rear_r",
+   "window_front_r",
+   "window_rear_r"
+  ],
+  "ground": [
+   "ground"
+  ]
+ },
+ "disassembly": [
+  {
+   "title": "Капот",
+   "nodes": [
+    {
+     "node": "hood",
+     "offset": [
+      0.4,
+      1.4,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Дверь багажника",
+   "nodes": [
+    {
+     "node": "tailgate",
+     "offset": [
+      -1.2,
+      0.8,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Передние двери",
+   "nodes": [
+    {
+     "node": "door_front_l",
+     "offset": [
+      0,
+      0,
+      1.4
+     ]
+    },
+    {
+     "node": "door_front_r",
+     "offset": [
+      0,
+      0,
+      -1.4
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Задние двери",
+   "nodes": [
+    {
+     "node": "door_rear_l",
+     "offset": [
+      0,
+      0,
+      1.4
+     ]
+    },
+    {
+     "node": "door_rear_r",
+     "offset": [
+      0,
+      0,
+      -1.4
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Крыша и лобовое стекло",
+   "nodes": [
+    {
+     "node": "roof",
+     "offset": [
+      0,
+      1.6,
+      0
+     ]
+    },
+    {
+     "node": "windshield",
+     "offset": [
+      0,
+      1.6,
+      0
+     ]
+    },
+    {
+     "node": "roof_rail_l",
+     "offset": [
+      0,
+      1.6,
+      0
+     ]
+    },
+    {
+     "node": "roof_rail_r",
+     "offset": [
+      0,
+      1.6,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Боковины кузова",
+   "nodes": [
+    {
+     "node": "fender_front_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "pillar_a_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "glass_quarter_front_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "pillar_b_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "pillar_c_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "quarter_rear_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "glass_quarter_rear_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "pillar_d_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "sill_l",
+     "offset": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "node": "fender_front_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "pillar_a_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "glass_quarter_front_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "pillar_b_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "pillar_c_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "quarter_rear_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "glass_quarter_rear_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "pillar_d_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    },
+    {
+     "node": "sill_r",
+     "offset": [
+      0,
+      0,
+      -1.2
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Бамперы и облицовка",
+   "nodes": [
+    {
+     "node": "bumper_front",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "bumper_rear",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "front_panel",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "rear_panel",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "cowl",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "headlight_l",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "headlight_r",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "turn_front_l",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "turn_front_r",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "taillight_l",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "taillight_r",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "turn_rear_l",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "turn_rear_r",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "reverse_light_l",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "reverse_light_r",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Сиденья и салон",
+   "nodes": [
+    {
+     "node": "seat_front_l",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "seat_front_r",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "seat_rear",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "dashboard",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "instrument_cluster",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "steering_wheel",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "gear_lever",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "node": "pedals",
+     "offset": [
+      0,
+      1.5,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Колёса",
+   "nodes": [
+    {
+     "node": "wheel_fl",
+     "offset": [
+      0,
+      0,
+      0.9
+     ]
+    },
+    {
+     "node": "wheel_fr",
+     "offset": [
+      0,
+      0,
+      -0.9
+     ]
+    },
+    {
+     "node": "wheel_rl",
+     "offset": [
+      0,
+      0,
+      0.9
+     ]
+    },
+    {
+     "node": "wheel_rr",
+     "offset": [
+      0,
+      0,
+      -0.9
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Впуск и воздушный фильтр",
+   "nodes": [
+    {
+     "node": "air_filter",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "air_duct",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "intake_manifold",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    },
+    {
+     "node": "throttle_body",
+     "offset": [
+      0,
+      0.9,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Клапанная крышка, катушка и свечи",
+   "nodes": [
+    {
+     "node": "valve_cover",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    },
+    {
+     "node": "ignition_coil",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    },
+    {
+     "node": "spark_plugs",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    },
+    {
+     "node": "fuel_rail",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    },
+    {
+     "node": "injectors",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Аккумулятор и блок предохранителей",
+   "nodes": [
+    {
+     "node": "battery",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    },
+    {
+     "node": "fuse_box",
+     "offset": [
+      0,
+      0.8,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Радиатор и вентилятор",
+   "nodes": [
+    {
+     "node": "radiator",
+     "offset": [
+      0.9,
+      0.3,
+      0
+     ]
+    },
+    {
+     "node": "cooling_fan",
+     "offset": [
+      0.9,
+      0.3,
+      0
+     ]
+    },
+    {
+     "node": "coolant_reservoir",
+     "offset": [
+      0.9,
+      0.3,
+      0
+     ]
+    },
+    {
+     "node": "coolant_hoses",
+     "offset": [
+      0.9,
+      0.3,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "hotspots": [
+  {
+   "partId": "engine_block",
+   "node": "engine_block",
+   "pos": [
+    1.45,
+    0.95,
+    -0.15
+   ]
+  },
+  {
+   "partId": "gearbox",
+   "node": "gearbox",
+   "pos": [
+    1.35,
+    0.66,
+    0.36
+   ]
+  },
+  {
+   "partId": "battery",
+   "node": "battery",
+   "pos": [
+    1.76,
+    0.82,
+    0.6
+   ]
+  },
+  {
+   "partId": "radiator",
+   "node": "radiator",
+   "pos": [
+    2.02,
+    0.7,
+    0.3
+   ]
+  },
+  {
+   "partId": "air_filter",
+   "node": "air_filter",
+   "pos": [
+    1.79,
+    0.88,
+    0.24
+   ]
+  },
+  {
+   "partId": "hood",
+   "node": "hood_panel",
+   "pos": [
+    1.6,
+    0.9,
+    0.0
+   ]
+  },
+  {
+   "partId": "door_front",
+   "node": "door_front_l_panel",
+   "pos": [
+    0.4,
+    0.7,
+    0.89
+   ]
+  },
+  {
+   "partId": "tailgate",
+   "node": "tailgate_panel",
+   "pos": [
+    -2.14,
+    0.8,
+    0.0
+   ]
+  },
+  {
+   "partId": "headlight",
+   "node": "headlight_l",
+   "pos": [
+    2.15,
+    0.725,
+    0.64
+   ]
+  },
+  {
+   "partId": "taillight",
+   "node": "taillight_l",
+   "pos": [
+    -2.17,
+    1.04,
+    0.79
+   ]
+  },
+  {
+   "partId": "strut_front",
+   "node": "strut_front_l",
+   "pos": [
+    1.22,
+    0.86,
+    0.62
+   ]
+  },
+  {
+   "partId": "brake_disc",
+   "node": "brake_disc_fl",
+   "pos": [
+    1.25,
+    0.307,
+    0.8
+   ]
+  },
+  {
+   "partId": "rear_suspension",
+   "node": "links_rear_l",
+   "pos": [
+    -1.35,
+    0.3,
+    0.45
+   ]
+  },
+  {
+   "partId": "muffler",
+   "node": "muffler",
+   "pos": [
+    -1.78,
+    0.18,
+    -0.35
+   ]
+  },
+  {
+   "partId": "fuel_tank",
+   "node": "fuel_tank",
+   "pos": [
+    -0.82,
+    0.18,
+    0.3
+   ]
+  },
+  {
+   "partId": "steering_wheel",
+   "node": "steering_wheel",
+   "pos": [
+    0.47,
+    1.12,
+    0.37
+   ]
+  },
+  {
+   "partId": "dashboard",
+   "node": "instrument_cluster",
+   "pos": [
+    0.65,
+    1.03,
+    0.37
+   ]
+  },
+  {
+   "partId": "seats",
+   "node": "seat_front_r",
+   "pos": [
+    -0.1,
+    0.8,
+    -0.37
+   ]
+  }
+ ]
+}

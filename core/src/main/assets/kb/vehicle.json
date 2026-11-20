@@ -1,0 +1,73 @@
+{
+  "comment": "Характеристики Chevrolet Rezzo 2005, 1.6 (1598 см³), 16V, МКПП-5, передний привод. Данные двухлитровой версии не используются. У каждой строки — уровень достоверности и источник.",
+  "sources": [
+    {"id": "user", "title": "Конфигурация, указанная владельцем", "url": "", "note": "2005 г., 1.6 (1598 см³), бензин, 4 цилиндра, 16 клапанов, МКПП-5, передний привод"},
+    {"id": "autodata", "title": "auto-data.net — Chevrolet Rezzo 1.6 i 16V (105 Hp)", "url": "https://www.auto-data.net/en/chevrolet-rezzo-1.6-i-16v-105hp-14444", "note": null},
+    {"id": "autodata1", "title": "autodata1.com — Chevrolet Rezzo 1.6 i 16V (105 Hp)", "url": "https://www.autodata1.com/en/car/chevrolet/rezzo/rezzo-16-i-16v-105-hp", "note": null},
+    {"id": "motoreu", "title": "motoreu.com — Chevrolet Rezzo 1.6 i 16V: размеры и масса", "url": "https://motoreu.com/chevrolet-rezzo-1.6-i-16v-data-223836", "note": null},
+    {"id": "adac", "title": "ADAC Autokatalog — Chevrolet Rezzo 1.6 (10/05–09/08), код двигателя A16DMS, 79 кВт", "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/chevrolet/rezzo/1generation/204519/", "note": "Европейский рынок"},
+    {"id": "mailru", "title": "auto.mail.ru — Chevrolet Rezzo I: 1.6 MT, 90 л.с., двигатель спереди поперечно", "url": "https://auto.mail.ru/catalog/chevrolet/rezzo/i/", "note": "Российский рынок"},
+    {"id": "autoru", "title": "auto.ru — Chevrolet Rezzo: шины, диски, крепёж", "url": "https://auto.ru/catalog/cars/chevrolet/rezzo/specifications/razmer-koles/", "note": null},
+    {"id": "cararac", "title": "cararac.com — Chevrolet Rezzo 2004–2008: тормоза, рулевое", "url": "https://cararac.com/spec/chevrolet/rezzo/", "note": null},
+    {"id": "carbaze", "title": "carbaze.com — Daewoo Tacuma 1.6 16v (2002)", "url": "https://carbaze.com/car-14255/daewoo-tacuma-16-16v", "note": "Родственная модель Daewoo Tacuma"},
+    {"id": "goauto", "title": "GoAuto — Daewoo Tacuma (2001): схема подвески и рулевого", "url": "https://web1.goauto.com.au/car-reviews/daewoo/tacuma/5-dr-hatch/2001-04-11/27212.html", "note": "Tacuma для Австралии; из источника взята только схема подвески и рулевого, данные мотора 2.0 не используются"},
+    {"id": "mymotorlist", "title": "mymotorlist.com — двигатель Daewoo A16DMS", "url": "https://mymotorlist.com/engines/daewoo/a16dms/", "note": "Справочник по двигателю, не по Rezzo"},
+    {"id": "winparts", "title": "winparts — применимость: Tacuma 1.6 SX 90 л.с. (66 кВт), обозначение L44", "url": "https://www.winparts.co.uk/drivetrain-suspension/shock-absorbers-coil-springs/shock-absorbers/c10/shock-absorber-mm-w0036-japanparts/p1414855.html", "note": "Каталог запчастей"},
+    {"id": "ultimatespecs", "title": "ultimatespecs — Daewoo Tacuma 1.6: объём системы охлаждения", "url": "https://www.ultimatespecs.com/car-specs/Daewoo/4910/Daewoo-Tacuma-16.html", "note": "Родственная модель Daewoo Tacuma"}
+  ],
+  "engineOptions": [
+    {"code": "UNCONFIRMED", "title": "Не подтверждён", "description": "Код двигателя ещё не уточнён. Приложение показывает только общие для версии 1.6 данные.", "confidence": "UNCONFIRMED", "sources": []},
+    {"code": "A16DMS", "title": "A16DMS", "description": "Daewoo 1.6 DOHC 16V. Указан для Rezzo 1.6 выпуска 2005–2008 в каталоге ADAC и в каталогах запчастей (версии 105–107 л.с.).", "confidence": "RELATED", "sources": ["adac", "mymotorlist"]},
+    {"code": "F16D3", "title": "F16D3", "description": "Модернизированный преемник A16DMS (по данным справочника двигателей). Для Rezzo источниками не подтверждён.", "confidence": "UNCONFIRMED", "sources": ["mymotorlist"]},
+    {"code": "L44", "title": "L44 (версия 90 л.с.)", "description": "Обозначение встречается в каталоге запчастей для Tacuma 1.6 мощностью 90 л.с. (66 кВт). Не подтверждено.", "confidence": "UNCONFIRMED", "sources": ["winparts"]},
+    {"code": "CUSTOM", "title": "Свой вариант", "description": "Впишите код как в ПТС (строка «Модель, № двигателя») или как выбит на блоке цилиндров.", "confidence": "UNCONFIRMED", "sources": []}
+  ],
+  "powerOptions": [
+    {"id": "UNKNOWN", "title": "Не знаю", "description": "Показывать все варианты с пометкой «зависит от версии».", "sources": []},
+    {"id": "90", "title": "90 л.с. (66 кВт)", "description": "Так указана версия 1.6 MT в российских каталогах.", "sources": ["mailru", "winparts"]},
+    {"id": "105", "title": "105 л.с. (77 кВт)", "description": "Европейские справочники, 2004–2008.", "sources": ["autodata", "autodata1"]},
+    {"id": "107", "title": "107 л.с. (79 кВт)", "description": "Rezzo 1.6 выпуска с 10/2005 по каталогу ADAC.", "sources": ["adac"]}
+  ],
+  "specs": [
+    {"group": "Общие", "label": "Модель", "value": "Chevrolet Rezzo (U100), 2005 г.", "confidence": "CONFIRMED", "sources": ["user"]},
+    {"group": "Общие", "label": "Кузов", "value": "Компактвэн, 5 дверей, 5 мест", "confidence": "CONFIRMED", "sources": ["autodata"]},
+    {"group": "Общие", "label": "Длина × ширина × высота", "value": "4350 × 1755 × 1580 мм", "confidence": "CONFIRMED", "sources": ["motoreu"]},
+    {"group": "Общие", "label": "Колёсная база", "value": "2600 мм", "confidence": "CONFIRMED", "sources": ["motoreu"]},
+    {"group": "Общие", "label": "Снаряжённая масса", "value": "1272 кг", "confidence": "VARIANT", "sources": ["autodata1"], "power": ["105"], "note": "Указано для версии 105 л.с."},
+
+    {"group": "Двигатель", "label": "Тип", "value": "Бензиновый, 4 цилиндра в ряд", "confidence": "CONFIRMED", "sources": ["user", "autodata"]},
+    {"group": "Двигатель", "label": "Расположение", "value": "Спереди, поперечно", "confidence": "CONFIRMED", "sources": ["mailru"]},
+    {"group": "Двигатель", "label": "Рабочий объём", "value": "1598 см³", "confidence": "CONFIRMED", "sources": ["user", "autodata"]},
+    {"group": "Двигатель", "label": "Клапаны", "value": "16 (4 на цилиндр)", "confidence": "CONFIRMED", "sources": ["user", "mailru"]},
+    {"group": "Двигатель", "label": "Газораспределение", "value": "Два распредвала в головке (DOHC)", "confidence": "RELATED", "sources": ["carbaze"]},
+    {"group": "Двигатель", "label": "Диаметр цилиндра × ход поршня", "value": "79,0 × 81,5 мм", "confidence": "RELATED", "sources": ["carbaze"], "note": "Данные для Daewoo Tacuma 1.6 16V — сверьте с вашим кодом двигателя"},
+    {"group": "Двигатель", "label": "Мощность", "value": "90 л.с. (66 кВт)", "confidence": "VARIANT", "sources": ["mailru"], "power": ["90"]},
+    {"group": "Двигатель", "label": "Мощность", "value": "105 л.с. (77 кВт) при 6000 об/мин", "confidence": "VARIANT", "sources": ["autodata", "cararac"], "power": ["105"]},
+    {"group": "Двигатель", "label": "Мощность", "value": "107 л.с. (79 кВт)", "confidence": "VARIANT", "sources": ["adac"], "power": ["107"]},
+    {"group": "Двигатель", "label": "Крутящий момент", "value": "142 Н·м при 3400 об/мин", "confidence": "VARIANT", "sources": ["autodata", "cararac"], "power": ["105"]},
+    {"group": "Двигатель", "label": "Крутящий момент", "value": "145 Н·м", "confidence": "VARIANT", "sources": ["adac"], "power": ["107"]},
+    {"group": "Двигатель", "label": "Крутящий момент", "value": "Нет надёжного источника", "confidence": "UNCONFIRMED", "sources": [], "power": ["90"]},
+    {"group": "Двигатель", "label": "Объём масла (с фильтром)", "value": "≈ 3,75 л", "confidence": "UNCONFIRMED", "sources": ["mymotorlist"], "engine": ["A16DMS"], "note": "Справочник двигателя A16DMS, не руководство Rezzo — уровень всегда контролируйте щупом"},
+    {"group": "Двигатель", "label": "Вязкость масла", "value": "5W-30 (рекомендация справочника)", "confidence": "UNCONFIRMED", "sources": ["mymotorlist"], "engine": ["A16DMS"], "note": "Сверьте с руководством по эксплуатации"},
+
+    {"group": "Трансмиссия", "label": "Коробка передач", "value": "Механическая, 5 ступеней", "confidence": "CONFIRMED", "sources": ["user"]},
+    {"group": "Трансмиссия", "label": "Привод", "value": "Передний", "confidence": "CONFIRMED", "sources": ["user", "autodata"]},
+    {"group": "Трансмиссия", "label": "Передаточное число 5-й передачи", "value": "0,89", "confidence": "RELATED", "sources": ["carbaze"], "note": "Daewoo Tacuma 1.6 16V, 2002"},
+    {"group": "Трансмиссия", "label": "Главная передача", "value": "3,94", "confidence": "RELATED", "sources": ["carbaze"], "note": "Daewoo Tacuma 1.6 16V, 2002"},
+
+    {"group": "Ходовая часть", "label": "Передняя подвеска", "value": "Независимая, стойки McPherson", "confidence": "RELATED", "sources": ["goauto"]},
+    {"group": "Ходовая часть", "label": "Задняя подвеска", "value": "Независимая, рычажная, с витыми пружинами", "confidence": "RELATED", "sources": ["goauto"], "note": "Точная кинематическая схема для Rezzo не подтверждена — на 3D-заглушке показана условно"},
+    {"group": "Ходовая часть", "label": "Рулевое управление", "value": "Рейка с гидроусилителем", "confidence": "RELATED", "sources": ["goauto", "cararac"]},
+    {"group": "Ходовая часть", "label": "Передние тормоза", "value": "Дисковые вентилируемые", "confidence": "CONFIRMED", "sources": ["cararac"]},
+    {"group": "Ходовая часть", "label": "Диаметр передних дисков", "value": "256 мм", "confidence": "RELATED", "sources": ["carbaze"]},
+    {"group": "Ходовая часть", "label": "Задние тормоза", "value": "Барабанные", "confidence": "CONFIRMED", "sources": ["cararac"]},
+    {"group": "Ходовая часть", "label": "ABS", "value": "Зависит от комплектации — отметьте в настройках", "confidence": "VARIANT", "sources": ["cararac"]},
+    {"group": "Ходовая часть", "label": "Заводские шины", "value": "185/70 R14, 195/60 R15, 205/55 R16", "confidence": "CONFIRMED", "sources": ["autoru"]},
+    {"group": "Ходовая часть", "label": "Диски", "value": "4×114,3, DIA 56,6; 5,5×14 ET44 / 6×15 ET44", "confidence": "CONFIRMED", "sources": ["autoru"]},
+    {"group": "Ходовая часть", "label": "Колёсные гайки", "value": "M12×1,5", "confidence": "CONFIRMED", "sources": ["autoru"]},
+    {"group": "Ходовая часть", "label": "Давление в шинах", "value": "2,0–2,2 бар", "confidence": "UNCONFIRMED", "sources": ["autoru"], "note": "Главный источник — табличка на стойке двери или крышке бака"},
+    {"group": "Ходовая часть", "label": "Момент затяжки колёсных гаек", "value": "Нет подтверждённых данных — смотрите руководство", "confidence": "UNCONFIRMED", "sources": []},
+
+    {"group": "Охлаждение", "label": "Объём системы охлаждения", "value": "≈ 7,0 л", "confidence": "RELATED", "sources": ["ultimatespecs"], "note": "Daewoo Tacuma 1.6"}
+  ]
+}

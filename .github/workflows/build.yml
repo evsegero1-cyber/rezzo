@@ -1,0 +1,72 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.7'
+
+      - name: Build release APK
+        id: build
+        run: |
+          set -o pipefail
+          gradle assembleRelease --no-daemon --stacktrace 2>&1 | tee build.log
+
+      # Лог сборки — в ветку ci-log (удобно смотреть ошибки без входа в GitHub)
+      - name: Publish build log
+        if: always()
+        run: |
+          mkdir -p logout
+          cp build.log logout/build.log 2>/dev/null || echo "no log" > logout/build.log
+          grep -nE "^e: |^w: .*deprecated|error:|FAILURE|What went wrong|Could not" -A4 logout/build.log > logout/errors.txt || true
+          echo "build=${{ steps.build.outcome }} sha=${GITHUB_SHA::7}" > logout/status.txt
+          cd logout
+          git init -q -b ci-log
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add . && git commit -qm "log ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" ci-log
+
+      - name: Rename APK
+        run: cp app/build/outputs/apk/release/app-release.apk RezzoAcademy.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RezzoAcademy-apk
+          path: RezzoAcademy.apk
+
+      # Последняя сборка — в ветке apk (один коммит, перезаписывается) и в релизе latest
+      - name: Publish APK to branch apk
+        run: |
+          mkdir out && cp RezzoAcademy.apk out/ && cd out
+          git init -q -b apk
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add RezzoAcademy.apk && git commit -qm "APK ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" apk
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Последняя сборка
+          body: Сборка из коммита ${{ github.sha }}
+          files: RezzoAcademy.apk
+          make_latest: true

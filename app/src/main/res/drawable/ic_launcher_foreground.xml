@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- условный силуэт компактвэна (не логотип) -->
+    <path
+        android:fillColor="#FF34D9C7"
+        android:pathData="M26,62 L28,54 L38,52 L48,41 L76,41 L83,52 L84,62 Z" />
+    <path
+        android:fillColor="#FF15181C"
+        android:pathData="M50,44 L58,44 L58,51 L42,51 Z M61,44 L74,44 L79,51 L61,51 Z" />
+    <path
+        android:fillColor="#FFE7EAEE"
+        android:pathData="M40,62 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 M72,62 m-6,0 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FF15181C"
+        android:pathData="M40,62 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0 M72,62 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#FFF2B33D"
+        android:pathData="M24,70 L86,70 L86,72 L24,72 Z" />
+</vector>
