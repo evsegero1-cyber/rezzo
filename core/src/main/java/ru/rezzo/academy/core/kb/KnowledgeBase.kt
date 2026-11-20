@@ -16,7 +16,7 @@ import ru.rezzo.academy.core.model.SpecItem
  * База знаний. Хранится в assets/kb в виде JSON, поэтому новые детали и
  * характеристики добавляются без изменения кода:
  *  - kb/systems.json  — системы автомобиля
- *  - kb/parts/*.json  — детали (по файлу на систему)
+ *  - kb/parts/ — детали (по json-файлу на систему)
  *  - kb/vehicle.json  — характеристики Rezzo 1.6, варианты двигателя и мощности, источники
  */
 class KnowledgeBase private constructor(

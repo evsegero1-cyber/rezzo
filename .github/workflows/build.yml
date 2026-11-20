@@ -27,7 +27,7 @@ jobs:
         id: build
         run: |
           set -o pipefail
-          gradle assembleRelease --no-daemon --stacktrace 2>&1 | tee build.log
+          gradle assembleRelease --no-daemon --continue 2>&1 | tee build.log
 
       # Лог сборки — в ветку ci-log (удобно смотреть ошибки без входа в GitHub)
       - name: Publish build log
